@@ -7,7 +7,7 @@ import TextInput from "../../components/TextInput/TextInputView";
 import Button from "../../components/Button/ButtonView";
 import { ContextProvider, Context } from "./CryptoState";
 
-const TodoView = () => {
+const DashboardView = () => {
   const styles = useGlobalStyles();
 
   return (
@@ -90,4 +90,4 @@ const TodoView = () => {
   );
 };
 
-export default TodoView;
+export default DashboardView;

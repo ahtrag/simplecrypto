@@ -41,7 +41,7 @@ const ContextProvider = ({ children }) => {
       state.password === state.defaultPassword
     ) {
       localStorage.setItem("loginSession", state.email);
-      window.location.href = "/todo";
+      window.location.href = "/dashboard";
     } else {
       alert("Email or Password Inccorect. Please try again!");
     }
@@ -57,7 +57,7 @@ const ContextProvider = ({ children }) => {
   };
 
   return localStorage.getItem("loginSession") ? (
-    <Redirect to="/todo" />
+    <Redirect to="/dashboard" />
   ) : (
     <Context.Provider
       value={{

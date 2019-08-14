@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import Auth from "./pages/Auth";
-import Todo from "./pages/Todo";
+import Dashboard from "./pages/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <Router>
     <Switch>
       <Route path="/" component={Auth} exact />
-      <Route path="/todo" component={Todo} exact />
+      <Route path="/dashboard" component={Dashboard} exact />
     </Switch>
   </Router>,
   document.getElementById("root")
